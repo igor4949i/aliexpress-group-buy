@@ -39,17 +39,17 @@ function backToTop() {
 }
 
 
-function copyT() {
-  // Get the text field
-  var copyText = document.getElementById("myInput");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+function loadData() {
+  return new Promise((resolve, reject) => {
+    // setTimeout не является частью решения
+    // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
+    setTimeout(resolve, 2000);
+  })
 }
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
