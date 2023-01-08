@@ -838,7 +838,7 @@ _::-webkit-:not(:root:root),
 }
 
 .table-box {
-  padding: 20px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
